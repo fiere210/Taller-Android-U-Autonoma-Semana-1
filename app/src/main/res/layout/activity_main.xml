@@ -6,27 +6,39 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
+    android:padding="16dp"
     tools:context="cl.ua.pancho.taller.MainActivity">
 
-    <TextView
+    <Button
         android:layout_width="match_parent"
-        android:layout_height="200dp"
-        android:text="Hello World!"
-        android:textSize="24sp"
-        android:background="#aabbcc"/>
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:id="@+id/button_toast"
+        android:background="@color/colorPrimaryDark"
+        android:textColor="#fff"
+        android:text="@string/button_label_toast"
+        android:onClick="eventToast"/>
 
     <TextView
         android:layout_width="match_parent"
-        android:layout_height="200dp"
-        android:text="Hello World!"
-        android:textSize="24sp"
-        android:background="#223366"/>
+        android:layout_height="0dp"
+        android:layout_weight="8"
+        android:text="@string/count_initial_value"
+        android:textColor="@color/colorPrimary"
+        android:gravity="center"
+        android:textSize="160sp"
+        android:background="@color/countBackgroundColor"
+        android:id="@+id/show_count"
+        android:textStyle="bold"/>
 
-    <TextView
+    <Button
         android:layout_width="match_parent"
-        android:layout_height="200dp"
-        android:text="Hello World!"
-        android:textSize="24sp"
-        android:background="#9988bb"/>
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:id="@+id/button_count"
+        android:background="@color/colorPrimaryDark"
+        android:textColor="#fff"
+        android:text="@string/button_label_count"
+        android:onClick="eventCount"/>
 
 </LinearLayout>
